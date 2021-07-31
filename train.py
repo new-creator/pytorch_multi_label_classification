@@ -29,7 +29,9 @@ def main():
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print("using {} device.".format(device))
 
-    # 多标签分类
+    # 多标签分类 数据集和标签路径分享在网盘上
+    # 链接：https://pan.baidu.com/s/12BoVUMIXfCd7S-nddyKDEw
+    # 提取码：srog
     data_dir = 'train.csv'
     test_dir = 'val.csv'
     train_generator = data_generator(data_dir, (224, 224, 3), 11, 'train')
